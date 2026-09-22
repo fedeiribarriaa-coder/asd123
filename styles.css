@@ -553,55 +553,71 @@
   }
 }
 
-/* HEADER — ajuste final móvil */
-.brand{
-  min-width:0;
-  flex:1 1 auto;
+/* HEADER — tamaño del nombre y verificado */
+
+.brand {
+  min-width: 0;
+  flex: 1 1 auto;
+  gap: 10px;
 }
-.brand-name{
-  display:inline-flex !important;
-  align-items:center !important;
-  justify-content:flex-start !important;
-  gap:5px !important;
-  white-space:nowrap;
-  font-size:22px;
+
+.brand-name {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 4px !important;
+  white-space: nowrap;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 18px !important;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1 !important;
 }
-.verified-badge{
-  width:12px !important;
-  height:12px !important;
-  flex:0 0 12px !important;
-  margin:0 !important;
+
+.verified-badge {
+  width: 14px !important;
+  height: 14px !important;
+  flex: 0 0 14px !important;
+  object-fit: contain;
+  display: block;
+  margin: 0 !important;
 }
-@media(max-width:520px){
-  .brand{
-    gap:10px;
+
+@media (max-width: 520px) {
+  .brand {
+    gap: 10px;
   }
-  .brand img{
-    width:48px;
-    height:48px;
-    flex-basis:48px;
+
+  .brand img {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
   }
-  .brand-name{
-    font-size:20px !important;
-    gap:4px !important;
-    line-height:1 !important;
+
+  .brand-name {
+    font-size: 18px !important;
+    gap: 4px !important;
   }
-  .verified-badge{
-    width:11px !important;
-    height:11px !important;
-    flex-basis:11px !important;
+
+  .verified-badge {
+    width: 14px !important;
+    height: 14px !important;
+    flex-basis: 14px !important;
   }
-  .menu{
-    flex:0 0 44px;
+
+  .menu {
+    flex: 0 0 44px;
   }
 }
-@media(max-width:380px){
-  .brand-name{
-    font-size:18px !important;
+
+@media (max-width: 380px) {
+  .brand-name {
+    font-size: 17px !important;
   }
-  .verified-badge{
-    width:10px !important;
-    height:10px !important;
-    flex-basis:10px !important;
+
+  .verified-badge {
+    width: 13px !important;
+    height: 13px !important;
+    flex-basis: 13px !important;
   }
 }
